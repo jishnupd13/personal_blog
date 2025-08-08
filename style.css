@@ -1,0 +1,356 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 20px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.content .name {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.content .name span {
+  color: #ffd86b;
+}
+
+.content .title {
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.content .experience {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  border-radius: 50px;
+  background: #fff;
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  background: #f1f1f1;
+}
+
+/* About Section */
+.about {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 20px;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.about h2::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  background: #23a6d5;
+  bottom: -8px;
+  left: 0;
+}
+
+.about p {
+  font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+  display: none;
+  text-align: center;
+  padding: 2rem 20px;
+  background: #222;
+  color: #fff;
+}
+
+/* Experience Section */
+.experience {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 20px;
+}
+
+.experience h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.experience h2::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  background: #23a6d5;
+  bottom: -8px;
+  left: 0;
+}
+
+.timeline {
+  border-left: 3px solid #23a6d5;
+  padding-left: 1.5rem;
+  margin-top: 2rem;
+}
+
+.timeline-item {
+  margin-bottom: 2rem;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.timeline-date {
+  font-weight: 600;
+  color: #23a6d5;
+}
+
+.timeline-item h3 {
+  margin: 0.2rem 0 0.5rem;
+  font-size: 1.15rem;
+}
+
+.timeline-item ul {
+  margin-left: 1rem;
+  list-style: disc;
+}
+
+.reveal.active .timeline-item {
+  animation: fadeUp 0.6s forwards ease-out;
+}
+
+.reveal.active .timeline-item:nth-child(1) { animation-delay: 0.1s; }
+.reveal.active .timeline-item:nth-child(2) { animation-delay: 0.3s; }
+.reveal.active .timeline-item:nth-child(3) { animation-delay: 0.5s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Skills Section */
+.skills {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 20px;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.skills h2::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  background: #23a6d5;
+  bottom: -8px;
+  left: 0;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.skills-list li {
+  background: #23a6d5;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 40px;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.reveal.active .skills-list li {
+  animation: chipFade 0.6s forwards ease-out;
+}
+
+.reveal.active .skills-list li:nth-child(1) { animation-delay: 0.1s; }
+.reveal.active .skills-list li:nth-child(2) { animation-delay: 0.2s; }
+.reveal.active .skills-list li:nth-child(3) { animation-delay: 0.3s; }
+.reveal.active .skills-list li:nth-child(4) { animation-delay: 0.4s; }
+.reveal.active .skills-list li:nth-child(5) { animation-delay: 0.5s; }
+.reveal.active .skills-list li:nth-child(6) { animation-delay: 0.6s; }
+.reveal.active .skills-list li:nth-child(7) { animation-delay: 0.7s; }
+.reveal.active .skills-list li:nth-child(8) { animation-delay: 0.8s; }
+.reveal.active .skills-list li:nth-child(9) { animation-delay: 0.9s; }
+.reveal.active .skills-list li:nth-child(10) { animation-delay: 1s; }
+
+@keyframes chipFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apps Section */
+.apps {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 20px;
+  text-align: center;
+}
+
+.apps h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.apps h2::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  background: #23a6d5;
+  bottom: -8px;
+  left: 0;
+}
+
+.apps-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.app-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  max-width: 260px;
+  padding: 1rem;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.app-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.app-card h3 {
+  margin: 0.75rem 0 0.5rem;
+  font-size: 1.15rem;
+}
+
+.app-card {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+}
+
+.view-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #fff;
+  background: #23a6d5;
+  padding: 0.4rem 1.2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease;
+}
+
+.app-card:hover .view-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.view-btn:hover {
+  background: #1a829f;
+}
+
+.reveal.active .app-card {
+  animation: fadeUp 0.6s forwards ease-out;
+}
+
+.reveal.active .app-card:nth-child(1) { animation-delay: 0.1s; }
+.reveal.active .app-card:nth-child(2) { animation-delay: 0.2s; }
+.reveal.active .app-card:nth-child(3) { animation-delay: 0.3s; }
+.reveal.active .app-card:nth-child(4) { animation-delay: 0.4s; }
+
+/* Scroll Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .content .experience {
+    font-size: 0.9rem;
+  }
+}
+
