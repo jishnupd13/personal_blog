@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | ezhuthola</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="about" style="padding-top:6rem; max-width:900px; margin:0 auto; line-height:1.7;">
+    <h2 style="text-align:center;">Privacy Policy</h2>
+    <p style="text-align:center; font-style: italic;">Last updated: 17&nbsp;November&nbsp;2025</p>
+
+    <p>ezhuthola ("the App") is developed and maintained by <strong>Jishnu P&nbsp;Dileep</strong> ("we", "our", or "us"). This page explains our policies regarding the collection, use, and disclosure of information when you use the App.</p>
+
+    <h3>1. Information We Collect</h3>
+    <p>The App is designed solely to present Malayalam riddles, proverbs, and tricky questions. <strong>We do not collect any personally identifiable information</strong> from you. The App does not require an account, sign-in, or any personal details such as name, email address, phone number, location, or contacts.</p>
+
+    <h3>2. Non-Personal Data</h3>
+    <p>To improve stability and performance, we may receive anonymous, non-personal diagnostic data (e.g., crash logs and basic usage statistics) provided automatically by Google Play-supplied services such as <em>Google Play Console</em> and <em>Firebase Crashlytics</em>. This information cannot be used to identify you and is used exclusively for debugging and analytics.</p>
+
+    <h3>3. Advertising & Third-Party Services</h3>
+    <p>The current version of the App <strong>does not display advertisements</strong> and does not embed any third-party SDKs beyond the Google Play services mentioned above. Should we introduce ads or additional third-party services in a future update, this Privacy Policy will be updated accordingly, and you will be informed via the app's update notes.</p>
+
+    <h3>4. Children’s Privacy</h3>
+    <p>The App is rated "<em>Everyone</em>" on Google Play and does not target children under 13 with specific content or data-collection practices. Because we do not collect personal information, we comply with the Children’s Online Privacy Protection Act (COPPA) and relevant Google Play policies.</p>
+
+    <h3>5. Data Security</h3>
+    <p>Although we do not store personal data, we take security seriously. All network requests (currently limited to fetching text content, if any) are made over <em>HTTPS</em> to safeguard the integrity of transmitted data.</p>
+
+    <h3>6. Changes to This Policy</h3>
+    <p>We may update our Privacy Policy from time to time. Any changes will be posted on this page and, where appropriate, within the App. You are advised to review this page periodically for any changes.</p>
+
+    <h3>7. Contact Us</h3>
+    <p>If you have any questions or suggestions regarding this Privacy Policy, please contact us at <a href="mailto:jishnupdileep@gmail.com">jishnupd13@gmail.com</a>.</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
